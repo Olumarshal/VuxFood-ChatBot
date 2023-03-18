@@ -184,7 +184,6 @@ io.on("connection", (socket) => {
     }
   });
   socket.on("disconnect", () => {
-    delete sessions[key];
     console.log("user disconnected");
   });
 });
